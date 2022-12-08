@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('categories', function (Blueprint $table) {
-            $table->increments('category_id')->comment('รหัสประเภทสินค้า');
-            $table->string('name')->comment('ชื่อประเภทสินค้า');
+            $table->increments('category_id')->nullable()->comment('รหัสประเภทสินค้า');
+            $table->string('name')->nullable()->comment('ชื่อประเภทสินค้า');
             $table->timestamps();
         });
     }

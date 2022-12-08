@@ -4,7 +4,7 @@
     <form class="login100-form validate-form" method="POST" action="{{ route('register') }}">
     @csrf
 					
-						<img src="{{ asset('template/login/images/logo.png') }}">
+						
 					
 					<span class="login100-form-title p-b-34 p-t-15">
 						register

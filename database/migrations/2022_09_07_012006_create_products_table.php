@@ -14,12 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->increments('product_id')->comment('รหัสสินค้า');
-            $table->string('name')->comment('ชื่อสินค้า');
-            $table->string('price')->comment('ราคา');
-            $table->string('description')->comment('รายละเอียด');
-            $table->string('category_id')->comment('ชื่อประเภทสินค้า');
-            $table->string('image')->comment('รูปสินค้า');
+            $table->increments('id')->nullable()->comment('รหัสสินค้า');
+            $table->string('name')->nullable()->comment('ชื่อสินค้า');
+            $table->string('price')->nullable()->comment('ราคา');
+            $table->string('description')->nullable()->comment('รายละเอียด');
+            $table->string('image')->nullable()->comment('รูปสินค้า');
             $table->timestamps();
         });
     }

@@ -2,7 +2,8 @@
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
-use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\ContentController;
+use App\Http\Controllers\Admin\ElementController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -36,12 +37,17 @@ Route::get('/admin/category/index',[CategoryController::class,'index'])->name('c
 Route::get('/admin/category/create',[CategoryController::class,'createform'])->name('category.create');
 //Users
 Route::get('/admin/user/index',[UserController::class,'index'])->name('user');
+//Route::get('/admin/user/index',[UserController::class,'index'])->name('user');
 //product
 Route::get('/admin/product/index',[ProductController::class,'index'])->name('product');
 Route::get('/admin/product/create',[ProductController::class,'createform'])->name('product.create');
+Route::post('/admin/product/insert',[ProductController::class,'insert'])->name('product.insert');
+Route::get('/admin/product/edit{id}',[ProductController::class,'editform'])->name('product.edit');
+Route::post('/admin/product/update{id}',[ProductController::class,'update'])->name('product.update');
+Route::get('/admin/product/delete{id}',[ProductController::class,'delete'])->name('product.delete');
 //contents
-Route::get('/admin/product/index',[ProductController::class,'index'])->name('product');
-Route::get('/admin/product/create',[ProductController::class,'createform'])->name('product.create');
-//about
-Route::get('/admin/product/index',[ProductController::class,'index'])->name('product');
-Route::get('/admin/product/create',[ProductController::class,'createform'])->name('product.create');
+Route::get('/admin/content/index',[ContentController::class,'index'])->name('content');
+Route::get('/admin/content/create',[ContentController::class,'createform'])->name('content.create');
+//element
+// Route::get('/admin/element/index',[ElementController::class,'index'])->name('element');
+// Route::get('/admin/element/create',[ElementController::class,'createform'])->name('element.create');

@@ -11,7 +11,6 @@
         <ul>
           <li><a href="#hero">หน้าแรก</a></li>
           <li><a href="#about">เกี่ยวกับ</a></li>
-          <li><a href="#menu">เมนู</a></li>
           <li><a href="#testimonials">ผู้จัดทำ</a></li>
           <li><a href="#contact">ติดต่อ</a></li>        
         </ul>

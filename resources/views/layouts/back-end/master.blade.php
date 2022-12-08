@@ -54,11 +54,9 @@
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="{{route('admin')}}" class="app-brand-link">
-                        <span class="app-brand-logo demo">
-                        <img src="{{ asset('template/admin/assets/img/logoicon.png') }}" alt="">
-                        </span>
+                        
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">
-                            IT Shop
+                            <h5>ก๋วยเตี๋ยวต้มยำโบราณพระราม5</h5>
                         </span>
                     </a>
 
@@ -72,47 +70,32 @@
 
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="{{route('admin')}}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
                     </li>  
-                    
-                    <li class="menu-item">
-                        <a href="{{route('user')}}" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                            <div data-i18n="Analytics">User</div>
-                        </a>
-                    </li>  
-
-                    <li class="menu-item">
-                        <a href="{{route('category')}}" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-grid-alt"></i>
-                            <div data-i18n="Analytics">Category</div>
-                        </a>
-                    </li>  
-
                     <li class="menu-item">
                         <a href="{{route('product')}}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-cart-alt"></i>
                             <div data-i18n="Analytics">Product</div>
                         </a>
                     </li>  
+                    <li class="menu-item">
+                        <a href="{{route('category')}}" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-cart-alt"></i>
+                            <div data-i18n="Analytics">Category</div>
+                        </a>
+                    </li>  
 
                     <li class="menu-item">
-                        <a href="{{route('product')}}" class="menu-link">
+                        <a href="{{route('content')}}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-cart-alt"></i>
                             <div data-i18n="Analytics">contents</div>
                         </a>
                     </li>
 
-                    <li class="menu-item">
-                        <a href="{{route('product')}}" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-cart-alt"></i>
-                            <div data-i18n="Analytics">about</div>
-                        </a>
-                    </li>
                 </ul>
                 
             </aside>
@@ -142,7 +125,7 @@
                                 <a class="nav-link dropdown-toggle hide-arrow" href="#"
                                     data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="{{ asset('template/admin/assets/img/avatars/user.jpg') }}" alt
+                                        <img src="{{ asset('template/admin/assets/img/avatars/Usernew.jpg') }}" alt
                                             class="w-px-40 h-auto rounded-circle" />
                                     </div>
                                 </a>
@@ -152,12 +135,12 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="{{ asset('template/admin/assets/img/avatars/user.jpg') }}" alt
+                                                        <img src="{{ asset('template/admin/assets/img/avatars/Usernew.jpg') }}" alt
                                                             class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block">John Doe</span>
+                                                    <span class="fw-semibold d-block">manusanun singkhorn</span>
                                                     <small class="text-muted">Admin</small>
                                                 </div>
                                             </div>
@@ -167,7 +150,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="profile.html">
+                                        <a class="dropdown-item" href="{{ route('home') }}">
                                             <i class="bx bx-user me-2"></i>
                                             <span class="align-middle">My Profile</span>
                                         </a>
@@ -198,21 +181,7 @@
                     <!-- / Content -->
                     
                     <!-- Footer -->
-                    <footer class="content-footer footer bg-footer-theme">
-                        <div
-                            class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                            <div class="mb-2 mb-md-0">
-                                ©
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script>
-                                , made with ❤️ by
-                                <a href="https://pongsawadi.ac.th/psc2019/" target="_blank"
-                                    class="footer-link fw-bolder">สาขาเทคโนโลยีสารสนเทศ วิทยาลัยเทคโนโลยีพงษ์สวัสดิ์</a>
-                            </div>
-                          
-                        </div>
-                    </footer>
+                    
                     <!-- / Footer -->
                     <div class="content-backdrop fade"></div>
                 </div>

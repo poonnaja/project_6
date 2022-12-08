@@ -87,71 +87,19 @@
 
             <div class="row gy-5">
 
+            @foreach($product as $item)
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu1.png" class="glightbox"><img src="{{ asset('template/promote/assets/img/menu/menu1.png') }}" class="menu-img img-fluid" alt=""></a>
-                <h4>ก๋วยเตี๋ยวต้มยำ</h4>
+                <img src="{{ asset('admin/upload/product/'.$item->image)}}" class="menu-img img-fluid" alt=""></a>
+                <h4>{{ $item->name }}</h4>
                 <p class="ingredients">
-               สูตรดั้งเดิมด้วยน้ำซุป เข้มข้นครบเครื่องต้มยำ
+                {{ $item->description }}
                 </p>
                 <p class="price">
-                  40/50บาท
+                {{ $item->price }}
                 </p>
+                
               </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu2.png" class="glightbox"><img src="{{ asset('template/promote/assets/img/menu/menu2.png') }}" class="menu-img img-fluid" alt=""></a>
-                <h4>ข้าวผัด</h4>
-                <p class="ingredients">
-                หอมกลิ่นกะทะจากสูตรโบราณ
-                </p>
-                <p class="price">
-                  55/65บาท
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu3.png" class="glightbox"><img src="{{ asset('template/promote/assets/img/menu/menu3.png') }}" class="menu-img img-fluid" alt=""></a>
-                <h4>กะเพราะปลา</h4>
-                <p class="ingredients">
-                จากกะเพราะปลาแท้ๆ
-                </p>
-                <p class="price">
-                  45/55บาท
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu4.png" class="glightbox"><img src="{{ asset('template/promote/assets/img/menu/menu4.png') }}" class="menu-img img-fluid" alt=""></a>
-                <h4>เต๋าหูทอด</h4>
-                <p class="ingredients">
-                   กรอบ อร่อย
-                </p>
-                <p class="price">
-                  20บาท
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu5.png" class="glightbox"><img src="{{ asset('template/promote/assets/img/menu/menu5.png') }}" class="menu-img img-fluid" alt=""></a>
-                <h4>ก๋วยเตี๋ยวคั่วไก่</h4>
-                <p class="ingredients">
-                หอมกลิ่นกะทะจากสูตรโบราณ
-                </p>
-                <p class="price">
-                  45/55บาท
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu6.png" class="glightbox"><img src="{{ asset('template/promote/assets/img/menu/menu6.png') }}" class="menu-img img-fluid" alt=""></a>
-                <h4>สุกี้แห้ง</h4>
-                <p class="ingredients">
-                น้ำจิ้มเข้มข้ม
-                </p>
-                <p class="price">
-                  45/55บาท
-                </p>
-              </div><!-- Menu Item -->
+              @endforeach
 
             </div>
           </div>

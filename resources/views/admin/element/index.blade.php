@@ -2,10 +2,10 @@
 @section('content')
 <div class="container-xxl flex-grow-1 container-p-y">
                         <div class="card">
-                            <h5 class="card-header">User</h5>
+                            <h5 class="card-header">สมาชิก</h5>
                             <div class="table-responsive text-nowrap">
                               <table class="table">
-                                <thead class="table-dark">
+                                <thead class="table-light">
                                   <tr>
                                     <th>No</th>
                                     <th>Name</th>

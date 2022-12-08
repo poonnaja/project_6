@@ -18,7 +18,7 @@ let config = {
     danger: '#ff3e1d',
     dark: '#233446',
     black: '#000',
-    white: '#fff',
+    white: '#000',
     body: '#f4f5fb',
     headingColor: '#566a7f',
     axisColor: '#a1acb8',

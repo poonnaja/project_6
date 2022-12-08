@@ -5,12 +5,12 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class ElementController extends Controller
 {
     public function index(){
-        return view('admin.content.index');
+        return view('admin.element.index');
         }
     public function createform(){
-            return view('admin.content.create');
+            return view('admin.element.create');
         }
 }

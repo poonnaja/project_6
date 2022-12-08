@@ -3,9 +3,7 @@
 @section('content')
     <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
     @csrf
-					<center>
-						<img src="{{ asset('template/login/images/logo.png') }}">
-					</center>
+					
 					<span class="login100-form-title p-b-34 p-t-15">
 						Log in
 					</span>
