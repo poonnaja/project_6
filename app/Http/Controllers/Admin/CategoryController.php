@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     public function index(){
-        return view('admin.category.index');
+        return view('admin.Category.index');
         }
     public function createform(){
-        return view('admin.category.create');
+        return view('admin.Category.create');
     }
 }
